@@ -1,175 +1,257 @@
-# 🏠 Housing Price Predictor – India 🇮🇳
-### ⚡ Production-Ready Machine Learning Model | Kaggle Deployment
+# 🏠 HouseIQ AI – Intelligent Real Estate Platform
+
+HouseIQ AI is a **full-stack AI-powered real estate web application** that helps users make smarter property decisions using **machine learning + generative AI**.
+
+It provides:
+
+* 📊 Price prediction
+* 🧠 Smart recommendations
+* 🤖 AI chatbot (Gemini-powered)
+* 📈 Market comparison analytics
+* 💰 EMI calculation
+* 📄 PDF report generation
 
 ---
 
-## 🚀 Live Model on Kaggle
+## 🌐 Live Demo
 
-🔗 [https://www.kaggle.com/models/saipradeepyallanki/housing-price-predictor-india](https://www.kaggle.com/models/saipradeepyallanki/housing-price-predictor-india)
-
-📦 **Model Version:** `RandomForestRegressor_v1`
-📁 **Path:** `scikitLearn/randomforestregressor_v1`
+* 🔗 Frontend: https://houseiq-7082e.web.app
+* 🔗 Backend API: https://houseiq.onrender.com
 
 ---
 
-## 🧠 Overview
+## 🚀 Features
 
-A **scalable and production-ready ML model** that predicts real estate prices across India using structured housing data.
+### 🔮 AI Price Prediction
 
-This project demonstrates:
+Predict house prices based on:
 
-* End-to-end ML pipeline
-* Real-world dataset handling
-* Model deployment via KaggleHub
-* Integration-ready architecture for web/mobile apps
-
----
-
-## 🏆 Key Highlights
-
-✨ Deployed ML model on Kaggle Models
-✨ Built using ensemble learning (Random Forest)
-✨ Designed for real-world noisy datasets
-✨ Ready for API / frontend integration
-✨ Clean and reproducible pipeline
+* Area (sqft)
+* Bedrooms (BHK)
+* City & location
+* Market price per sqft
+* Income-based affordability analysis
 
 ---
 
-## ⚙️ Tech Stack
+### 📊 Market Comparison
 
-| Category      | Tools Used    |
-| ------------- | ------------- |
-| Language      | Python        |
-| ML Framework  | Scikit-learn  |
-| Data Handling | Pandas, NumPy |
-| Deployment    | Kaggle Models |
-| Integration   | KaggleHub     |
+Compare property prices across major Indian cities:
 
----
-
-## 📊 Model Insights
-
-* **Algorithm:** Random Forest Regressor
-* **Type:** Supervised Regression
-* **Strength:** Handles non-linear relationships effectively
-* **Advantage:** Reduces overfitting via ensemble averaging
+* Bangalore
+* Mumbai
+* Delhi
+* Hyderabad
+* Chennai
+* Kolkata
 
 ---
 
-## 📥 Quick Start (Use the Model)
+### 🤖 AI Chatbot (Gemini)
 
-### 1️⃣ Install Dependency
+* Ask real estate questions
+* Get insights on pricing trends, investment, and legalities
+* Powered by Google Gemini API
+
+---
+
+### 🧭 Smart Recommendation System
+
+* Suggests best cities based on:
+
+  * Budget
+  * BHK preference
+* Provides match % and insights
+
+---
+
+### 💰 EMI Calculator
+
+* Calculates monthly EMI
+* Shows:
+
+  * Total interest
+  * Principal breakdown
+
+---
+
+### 📄 PDF Report Generator
+
+* Generates downloadable property reports
+* Includes:
+
+  * Price
+  * Risk ratio
+  * AI decision
+
+---
+
+### 🔐 Authentication System
+
+* User Signup/Login
+* Firebase Authentication
+* User-specific:
+
+  * History
+  * Favorites
+
+---
+
+## 🏗️ Tech Stack
+
+### 🌐 Frontend
+
+* HTML, CSS, JavaScript
+* Firebase Hosting
+* Firebase Authentication
+* Firestore Database
+
+### ⚙️ Backend
+
+* Python (Flask)
+* REST API
+* Hosted on Render
+
+### 🤖 AI & ML
+
+* Scikit-learn (ML model)
+* Google Gemini API (Chatbot)
+
+---
+
+## 🔗 Architecture
+
+```
+User → Firebase Frontend → Flask API (Render)
+            ↓
+        Fetch API
+            ↓
+Backend (ML Model + Gemini AI)
+            ↓
+        JSON Response
+            ↓
+Frontend UI Update
+```
+
+---
+
+## 📁 Project Structure
+
+```
+HouseIQ/
+│
+├── Frontend/
+│   ├── index.html
+│   ├── 404.html
+│
+├── Backend/
+│   ├── app.py
+│   ├── requirements.txt
+│
+├── firebase.json
+├── .firebaserc
+├── README.md
+```
+
+---
+
+## ⚙️ Setup Instructions
+
+### 🔹 1. Clone Repository
 
 ```bash
-pip install kagglehub
-```
-
-### 2️⃣ Load Model
-
-```python
-import kagglehub
-
-path = kagglehub.model_download(
-    "saipradeepyallanki/housing-price-predictor-india/scikitLearn/randomforestregressor_v1"
-)
-
-print("Model path:", path)
+git clone https://github.com/your-username/HouseIQ.git
+cd HouseIQ
 ```
 
 ---
 
-## 🧩 Features Used
+### 🔹 2. Backend Setup
 
-* 📍 Location
-* 📐 Area (sq.ft)
-* 🛏 BHK (Bedrooms)
-* 🚿 Bathrooms
-* 🏢 Property Type
-* 📊 Additional housing attributes
+```bash
+cd Backend
+pip install -r requirements.txt
+```
 
----
+Create `.env` file:
 
-## 🏗️ ML Pipeline
+```
+GEMINI_API_KEY=your_api_key_here
+```
 
-```text
-Data Collection  
-   ↓  
-Data Cleaning & Preprocessing  
-   ↓  
-Feature Engineering  
-   ↓  
-Model Training (Random Forest)  
-   ↓  
-Evaluation  
-   ↓  
-Deployment on Kaggle  
+Run backend:
+
+```bash
+python app.py
 ```
 
 ---
 
-## 📈 Performance (Add yours if available)
+### 🔹 3. Frontend Setup
 
-| Metric   | Value |
-| -------- | ----- |
-| R² Score | TBD   |
-| MAE      | TBD   |
-| RMSE     | TBD   |
+Open `Frontend/index.html`
+Update:
 
-*(Update this after evaluation for extra impact 🔥)*
-
----
-
-## 🧪 Use Cases
-
-* 💰 Property price estimation
-* 📊 Market trend analysis
-* 🏢 Real estate platforms
-* 🤖 ML-based recommendation systems
+```javascript
+const API_BASE = "http://127.0.0.1:5000";
+```
 
 ---
 
-## 🔮 Future Scope
+### 🔹 4. Firebase Deployment
 
-* 🚀 XGBoost / LightGBM models
-* 🌍 Geo-spatial intelligence
-* 📱 Full-stack app (React + Firebase)
-* ⚡ REST API (FastAPI / Flask)
-* 📊 Advanced analytics dashboard
+```bash
+firebase deploy
+```
 
 ---
 
-## ⚠️ Disclaimer
+## 🌍 Deployment
 
-This model is trained on publicly available real estate data and is intended for **educational purposes only**.
-Predictions may not reflect exact market prices.
+### Frontend
+
+* Hosted on Firebase Hosting
+
+### Backend
+
+* Hosted on Render
 
 ---
 
-## 📜 License
+## ⚠️ Notes
 
-MIT License — free to use, modify, and distribute.
+* Free Render tier may sleep after inactivity
+* First request may take ~30–60 seconds
+* Large `.pkl` model files are excluded from GitHub
+
+---
+
+## 💡 Future Improvements
+
+* Payment integration (Razorpay)
+* Real-time property listings API
+* User dashboards with analytics
+* Mobile app version
+* Advanced ML models
 
 ---
 
 ## 👨‍💻 Author
 
 **Sai Pradeep**
-Machine Learning Engineer | Full Stack Developer
+
+* GitHub: https://github.com/Saipradeep-code
 
 ---
 
-## 🧠 Resume-Ready Bullet
+## ⭐ If you like this project
 
-> Deployed a **Random Forest-based housing price prediction model** on Kaggle, enabling reusable ML inference via KaggleHub API for real-world applications.
+Give it a ⭐ on GitHub and share it!
 
 ---
 
-## ⭐ Support
+## 🧠 Interview Summary (Bonus)
 
-If this helped you:
-
-⭐ Star the repo
-👍 Upvote on Kaggle
-📢 Share with your network
+> “I built a full-stack AI real estate platform using Firebase for frontend and Flask backend deployed on Render, integrating machine learning and Gemini API via REST APIs.”
 
 ---
