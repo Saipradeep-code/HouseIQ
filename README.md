@@ -15,8 +15,7 @@ It provides:
 
 ## 🌐 Live Demo
 
-* 🔗 Frontend: https://houseiq-7082e.web.app
-* 🔗 Backend API: https://houseiq.onrender.com
+* 🔗 website: https://houseiq-7082e.web.app
 
 ---
 
@@ -253,5 +252,5 @@ Give it a ⭐ on GitHub and share it!
 ## 🧠 Interview Summary (Bonus)
 
 > “I built a full-stack AI real estate platform using Firebase for frontend and Flask backend deployed on Render, integrating machine learning and Gemini API via REST APIs.”
-
+* 🔗 Backend API: https://houseiq.onrender.com
 ---
